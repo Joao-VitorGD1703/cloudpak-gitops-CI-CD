@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cp4d-operator
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/<seu-user>/cloudpak-gitops.git'
+    targetRevision: main
+    path: cp4d-operator
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: ibm-cp4d
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

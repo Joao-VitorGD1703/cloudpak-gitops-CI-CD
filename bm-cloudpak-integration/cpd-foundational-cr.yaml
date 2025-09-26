@@ -1,0 +1,10 @@
+apiVersion: cpd.ibm.com/v1
+kind: Ibmcpd
+metadata:
+  name: cpd-cr
+  namespace: ibm-cpd
+spec:
+  license:
+    accept: true
+    license: Enterprise
+  storageClass: managed-nfs-storage

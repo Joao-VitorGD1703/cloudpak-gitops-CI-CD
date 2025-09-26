@@ -1,0 +1,9 @@
+apiVersion: analytics.ibm.com/v1
+kind: WatsonStudio
+metadata:
+  name: ws-cr
+  namespace: ibm-cpd
+spec:
+  license:
+    accept: true
+    license: Enterprise

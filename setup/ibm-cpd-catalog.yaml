@@ -4,8 +4,8 @@ metadata:
   name: ibm-cpd-catalog
   namespace: openshift-marketplace
 spec:
-  displayName: IBM Cloud Pak for Data
-  publisher: IBM
+  displayName: "IBM Cloud Pak for Data"
+  publisher: "IBM"
   sourceType: grpc
   image: icr.io/cpopen/ibm-cpd-catalog:latest
   updateStrategy:

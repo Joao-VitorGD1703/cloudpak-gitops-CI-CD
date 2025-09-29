@@ -8,3 +8,4 @@ spec:
     accept: true
     license: Enterprise
   storageClass: managed-nfs-storage
+  version: "4.8.0"

@@ -1,8 +1,0 @@
-apiVersion: operators.coreos.com/v1
-kind: OperatorGroup
-metadata:
-  name: ibm-cp4d-operatorgroup
-  namespace: ibm-cp4d
-spec:
-  targetNamespaces:
-    - ibm-cp4d

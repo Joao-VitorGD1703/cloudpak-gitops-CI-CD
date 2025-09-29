@@ -1,9 +1,0 @@
-apiVersion: appconnect.ibm.com/v1beta1
-kind: AppConnect
-metadata:
-  name: appconnect-cr
-  namespace: ibm-cp4i
-spec:
-  license:
-    accept: true
-    license: Enterprise

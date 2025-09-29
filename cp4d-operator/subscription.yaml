@@ -9,3 +9,5 @@ spec:
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
   installPlanApproval: Automatic
+
+

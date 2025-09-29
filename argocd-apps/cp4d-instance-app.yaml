@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<seu-user>/cloudpak-gitops.git'
+    repoURL: 'https://github.com/Joao-VitorGD1703/cloudpak-gitops-CI-CD.git'
     targetRevision: main
-    path: cp4d-instance
+    path: cp4d/instance
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
     namespace: ibm-cp4d
   syncPolicy:
     automated:
-      prune: true
       selfHeal: true
+      prune: true

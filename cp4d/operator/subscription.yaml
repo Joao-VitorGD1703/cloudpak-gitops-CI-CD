@@ -1,11 +1,11 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: ibm-cp4d-sub
+  name: ibm-cp4d-subscription
   namespace: ibm-cp4d
 spec:
-  channel: v1.0              
-  name: ibm-cp4d
+  channel: v2.0
+  name: ibm-cp4d-operator
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
   installPlanApproval: Automatic

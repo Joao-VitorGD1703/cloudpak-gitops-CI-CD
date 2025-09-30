@@ -7,7 +7,7 @@ spec:
   displayName: "IBM Cloud Pak for Data"
   publisher: "IBM"
   sourceType: grpc
-  image: icr.io/cpopen/ibm-cpd-catalog:v4.8.4
+  image: icr.io/cpopen/ibm-cpd-catalog@sha256:5b958c857a2f578711410711751168175b35a9821815e9854bdb5b084e7235b3
   updateStrategy:
     registryPoll:
       interval: 45m

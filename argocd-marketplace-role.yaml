@@ -1,0 +1,10 @@
+# argocd-marketplace-role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: argocd-marketplace-manager
+  namespace: openshift-marketplace
+rules:
+- apiGroups: [""]
+  resources: ["secrets", "serviceaccounts"]
+  verbs: ["create", "get", "list", "watch", "patch", "update"]

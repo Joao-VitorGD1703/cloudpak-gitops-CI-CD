@@ -1,13 +1,14 @@
+# setup/ibm-cpd-catalog.yaml
 apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
 metadata:
-  name: ibm-cpd-catalog
+  name: ibm-operator-catalog
   namespace: openshift-marketplace
 spec:
-  displayName: "IBM Cloud Pak for Data"
+  displayName: "IBM Operator Catalog"
   publisher: "IBM"
   sourceType: grpc
-  image: icr.io/cpopen/ibm-cpd-catalog@sha256:5b958c857a2f578711410711751168175b35a9821815e9854bdb5b084e7235b3
+  image: icr.io/cpopen/ibm-operator-catalog:latest
   updateStrategy:
     registryPoll:
       interval: 45m

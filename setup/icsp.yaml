@@ -1,0 +1,10 @@
+# setup/icsp.yaml
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  name: ibm-entitlement-key
+spec:
+  repositoryDigestMirrors:
+  - mirrors:
+    - icr.io/cpopen
+    source: cp.icr.io/cpopen
